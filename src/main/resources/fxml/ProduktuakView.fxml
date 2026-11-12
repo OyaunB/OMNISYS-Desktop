@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.layout.StackPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.omnisys.desktop.controller.ProduktuakController"
+            prefWidth="1400"
+            prefHeight="850"
+            style="-fx-background-color: #071426;">
+
+    <top>
+        <HBox alignment="CENTER_LEFT"
+              spacing="22"
+              style="-fx-background-color: #10243D; -fx-padding: 20 32 20 32;">
+
+            <Button fx:id="backButton"
+                    text="← Aginte-panela"
+                    style="-fx-background-color: #263D56;
+               -fx-text-fill: #FF5555;
+               -fx-font-weight: bold;
+               -fx-background-radius: 6;
+               -fx-padding: 10 22 10 22;
+               -fx-cursor: hand;"/>
+
+            <Label text="OMNISYS  |  PRODUKTUAK"
+                   style="-fx-text-fill: white;
+                      -fx-font-size: 19px;
+                      -fx-font-weight: bold;"/>
+
+        </HBox>
+    </top>
+
+    <center>
+        <VBox spacing="20"
+              style="-fx-padding: 35;">
+
+            <Label text="Produktuen kudeaketa"
+                   style="-fx-text-fill: white;
+                      -fx-font-size: 27px;
+                      -fx-font-weight: bold;"/>
+
+            <Label text="Odoo 19 sistemako produktuen katalogoa"
+                   style="-fx-text-fill: #9BAFC5;
+                      -fx-font-size: 14px;"/>
+
+            <ScrollPane fitToWidth="true"
+                        style="-fx-background: #071426;
+                           -fx-background-color: transparent;"
+                        VBox.vgrow="ALWAYS">
+
+                <content>
+                    <StackPane>
+
+                        <TilePane fx:id="productsContainer"
+                                  hgap="22"
+                                  vgap="22"
+                                  prefColumns="4"
+                                  alignment="TOP_LEFT"
+                                  style="-fx-background-color: transparent;">
+
+                            <padding>
+                                <Insets top="10"
+                                        right="10"
+                                        bottom="20"
+                                        left="10"/>
+                            </padding>
+
+                        </TilePane>
+
+                        <VBox fx:id="loadingContainer"
+                              alignment="CENTER"
+                              spacing="15"
+                              style="-fx-background-color: #071426;">
+
+                            <ProgressIndicator fx:id="loadingIndicator"
+                                               prefWidth="55"
+                                               prefHeight="55"/>
+
+                            <Label text="Produktuak kargatzen..."
+                                   style="-fx-text-fill: #20DDF5;
+                                      -fx-font-size: 16px;
+                                      -fx-font-weight: bold;"/>
+
+                            <Label text="Mesedez, itxaron une batez."
+                                   style="-fx-text-fill: #9BAFC5;
+                                      -fx-font-size: 13px;"/>
+
+                        </VBox>
+
+                    </StackPane>
+                </content>
+
+            </ScrollPane>
+
+        </VBox>
+    </center>
+
+</BorderPane>

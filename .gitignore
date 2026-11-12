@@ -1,0 +1,11 @@
+.idea/
+target/
+*.db
+*.sqlite
+*.sqlite3
+*.log
+.env
+.env.*
+!.env.example
+*.jks
+*.keystore

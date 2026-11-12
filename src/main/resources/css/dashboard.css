@@ -1,0 +1,180 @@
+
+/* =========================================
+   OMNISYS DESKTOP - DASHBOARD
+   ========================================= */
+
+.root {
+    -fx-background-color: #071426;
+    -fx-font-family: "Segoe UI";
+}
+
+/* MENU LATERAL */
+
+.sidebar {
+    -fx-background-color: linear-gradient(
+            to bottom,
+            #102b46,
+            #071a30
+    );
+    -fx-padding: 25;
+}
+
+.sidebar-title {
+    -fx-text-fill: #20DDF5;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+/* BARRA SUPERIOR */
+
+.topbar {
+    -fx-background-color: #10243D;
+    -fx-padding: 18 25 18 25;
+    -fx-border-color: transparent transparent #164568 transparent;
+}
+
+.topbar-title {
+    -fx-text-fill: white;
+    -fx-font-size: 19px;
+    -fx-font-weight: bold;
+}
+
+/* CONTENIDO */
+
+.dashboard-content {
+    -fx-background-color: #071426;
+    -fx-padding: 35;
+}
+
+.welcome-title {
+    -fx-text-fill: white;
+    -fx-font-size: 27px;
+    -fx-font-weight: bold;
+}
+
+.welcome-subtitle {
+    -fx-text-fill: #9BAFC5;
+    -fx-font-size: 14px;
+}
+
+/* TARJETAS */
+
+.metric-card {
+    -fx-background-color: linear-gradient(
+            to bottom right,
+            #103653,
+            #09233C
+    );
+    -fx-background-radius: 14;
+    -fx-border-color: #16BDE8;
+    -fx-border-radius: 14;
+    -fx-border-width: 1.3;
+    -fx-padding: 22;
+    -fx-effect: dropshadow(
+            gaussian,
+            rgba(0, 180, 255, 0.12),
+            12,
+            0.2,
+            0,
+            3
+    );
+}
+
+.metric-title {
+    -fx-text-fill: #20DDF5;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.metric-value {
+    -fx-text-fill: white;
+    -fx-font-size: 27px;
+    -fx-font-weight: bold;
+}
+
+.accent-month {
+    -fx-text-fill: #FF9F43;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+/* BOTONES DEL MENU */
+
+.nav-button {
+    -fx-background-color: #173451;
+    -fx-text-fill: #EAF6FF;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 13 16;
+    -fx-background-radius: 9;
+    -fx-border-color: #24516E;
+    -fx-border-radius: 9;
+    -fx-border-width: 1;
+    -fx-cursor: hand;
+    -fx-min-width: 195;
+    -fx-pref-width: 195;
+}
+
+.nav-button:hover {
+    -fx-background-color: #254968;
+    -fx-border-color: #FF963D;
+    -fx-text-fill: #FFFFFF;
+    -fx-effect: dropshadow(
+            gaussian,
+            rgba(255, 150, 61, 0.30),
+            10,
+            0.2,
+            0,
+            2
+    );
+}
+
+.nav-button-active {
+    -fx-background-color: #254968;
+    -fx-text-fill: #FF963D;
+    -fx-border-color: #FF963D;
+    -fx-border-radius: 9;
+    -fx-border-width: 1.5;
+}
+
+/* BOTON CERRAR SESION */
+
+.logout-button {
+    -fx-background-color: #D64545;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 7;
+    -fx-cursor: hand;
+}
+
+.logout-button:hover {
+    -fx-background-color: #F05252;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: #10243D;
+    -fx-border-color: #1C4568;
+}
+
+.combo-box-popup .list-cell {
+    -fx-background-color: #10243D;
+    -fx-text-fill: white;
+    -fx-padding: 8 12 8 12;
+}
+
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: #263D56;
+    -fx-text-fill: #20DDF5;
+}
+
+.combo-box-popup .list-cell:filled:selected {
+    -fx-background-color: #263D56;
+    -fx-text-fill: #20DDF5;
+}
+
+/* ComboBox-etan hautatutako balioa */
+.combo-box .list-cell {
+    -fx-text-fill: #20DDF5;
+    -fx-font-weight: bold;
+}

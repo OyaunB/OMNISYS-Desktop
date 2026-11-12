@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.ComboBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.omnisys.desktop.controller.FinantzakController"
+            prefWidth="1400"
+            prefHeight="850"
+            style="-fx-background-color: #071426;">
+
+    <top>
+        <HBox alignment="CENTER_LEFT"
+              spacing="20"
+              style="-fx-background-color: #10243D; -fx-padding: 20 30;">
+
+            <Button fx:id="backButton"
+                    text="← Aginte-panela"
+                    style="-fx-background-color: #263D56;
+               -fx-text-fill: #FF5555;
+               -fx-font-weight: bold;
+               -fx-background-radius: 6;
+               -fx-padding: 10 22 10 22;
+               -fx-cursor: hand;"/>
+
+            <Label text="OMNISYS  |  FINANTZAK"
+                   style="-fx-text-fill: white;
+                          -fx-font-size: 20px;
+                          -fx-font-weight: bold;"/>
+        </HBox>
+    </top>
+
+    <center>
+        <VBox spacing="25"
+              style="-fx-padding: 35;">
+
+            <Label text="Finantza-egoera"
+                   style="-fx-text-fill: white;
+                          -fx-font-size: 27px;
+                          -fx-font-weight: bold;"/>
+
+            <Label text="Enpresaren finantza-informazioa"
+                   style="-fx-text-fill: #9BAFC5;
+                          -fx-font-size: 14px;"/>
+
+            <HBox alignment="CENTER_LEFT" spacing="15">
+
+                <Label text="HILABETEA:"
+                       style="-fx-text-fill: white;
+                  -fx-font-weight: bold;"/>
+
+                <ComboBox fx:id="monthComboBox"
+                          prefWidth="225"
+                          promptText="Aukeratu hilabetea"
+                          style="-fx-background-color: #263D56;
+                     -fx-mark-color: #FF5555;"/>
+
+                <Label text="URTEA:"
+                       style="-fx-text-fill: white;
+                  -fx-font-weight: bold;"/>
+
+                <ComboBox fx:id="yearComboBox"
+                          prefWidth="150"
+                          promptText="Aukeratu urtea"
+                          style="-fx-background-color: #263D56;
+                     -fx-mark-color: #FF5555;"/>
+
+            </HBox>
+
+            <Label fx:id="selectedPeriodLabel"
+                   text="AZAROA 2026"
+                   style="-fx-text-fill: #FF9800;
+              -fx-font-size: 16px;
+              -fx-font-weight: bold;"/>
+
+            <GridPane hgap="20" vgap="20">
+
+                <VBox GridPane.columnIndex="0"
+                      GridPane.rowIndex="0"
+                      spacing="12"
+                      style="-fx-background-color: #10243D;
+                             -fx-background-radius: 12;
+                             -fx-padding: 25;">
+
+                    <Label text="DIRU-SARRERAK"
+                           style="-fx-text-fill: #20DDF5;
+                                  -fx-font-size: 13px;"/>
+
+                    <Label fx:id="incomeLabel"
+                           text="Kargatzen..."
+                           style="-fx-text-fill: white;
+                                  -fx-font-size: 25px;
+                                  -fx-font-weight: bold;"/>
+                </VBox>
+
+                <VBox GridPane.columnIndex="1"
+                      GridPane.rowIndex="0"
+                      spacing="12"
+                      style="-fx-background-color: #10243D;
+                             -fx-background-radius: 12;
+                             -fx-padding: 25;">
+
+                    <Label text="GASTUAK"
+                           style="-fx-text-fill: #FF5555;
+                             -fx-font-size: 13px;
+                             -fx-font-weight: bold;"/>
+
+                    <Label fx:id="expensesLabel"
+                           text="Kargatzen..."
+                           style="-fx-text-fill: white;
+                                  -fx-font-size: 25px;
+                                  -fx-font-weight: bold;"/>
+                </VBox>
+
+                <VBox GridPane.columnIndex="2"
+                      GridPane.rowIndex="0"
+                      spacing="12"
+                      style="-fx-background-color: #10243D;
+                             -fx-background-radius: 12;
+                             -fx-padding: 25;">
+
+                    <Label text="IRABAZIAK"
+                           style="-fx-text-fill: #00C853;
+                                  -fx-font-size: 13px;"/>
+
+                    <Label fx:id="profitLabel"
+                           text="Kargatzen..."
+                           style="-fx-text-fill: white;
+                                  -fx-font-size: 25px;
+                                  -fx-font-weight: bold;"/>
+                </VBox>
+
+            </GridPane>
+
+            <Label text="Finantza-laburpena"
+                   style="-fx-text-fill: white;
+                          -fx-font-size: 20px;
+                          -fx-font-weight: bold;"/>
+
+            <Label text="Datuak Odoo 19 sistemako kontabilitate-erregistroetatik eskuratuko dira."
+                   style="-fx-text-fill: #9BAFC5;
+                          -fx-font-size: 14px;"/>
+
+        </VBox>
+    </center>
+
+</BorderPane>
